@@ -58,13 +58,9 @@ Shinvo-Project/
 ## Project Showcase
 
 ### 🛍️ User Experience
-| Premium Categories | Product Details | Bestsellers Carousel |
+| Premium Categories | Product Details | Smart Checkout |
 | :---: | :---: | :---: |
-| ![Categories](./Frontend/public/screenshots/categories.png) | ![Details](./Frontend/public/screenshots/product_details.png) | ![Carousel](./Frontend/public/screenshots/bestsellers.png) |
-
-| Smart Checkout | Payment Gateway |
-| :---: | :---: |
-| ![Checkout](./Frontend/public/screenshots/checkout.png) | ![Payment](./Frontend/public/screenshots/payment.png) |
+| ![Categories](./Frontend/public/screenshots/categories.png) | ![Details](./Frontend/public/screenshots/product_details.png) | ![Checkout](./Frontend/public/screenshots/checkout.png) |
 
 ---
 
