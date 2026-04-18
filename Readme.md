@@ -1,4 +1,4 @@
-# 💎 Shinvo — Premium E-Commerce Platform
+# Shinvo — Premium E-Commerce Platform
 
 ![Final Home View](./Frontend/public/screenshots/hero.png)
 
@@ -57,14 +57,21 @@ Shinvo-Project/
 
 ## Project Showcase
 
-### 🛍️ User Experience
-| Premium Categories | Product Details | Smart Checkout |
+### User Experience
+| Premium Categories | Product Details | Smart Bestsellers |
 | :---: | :---: | :---: |
-| ![Categories](./Frontend/public/screenshots/categories.png) | ![Details](./Frontend/public/screenshots/product_details.png) | ![Checkout](./Frontend/public/screenshots/checkout.png) |
+| ![Categories](./Frontend/public/screenshots/categories.png) | ![Details](./Frontend/public/screenshots/product_details.png) | ![Bestsellers](./Frontend/public/screenshots/bestsellers.png) |
 
 ---
 
-### 🛡️ Admin Management Suite
+### Checkout & Payment
+| Seamless Checkout | Secure Payment |
+| :---: | :---: |
+| ![Checkout](./Frontend/public/screenshots/checkout.png) | ![Payment](./Frontend/public/screenshots/payment.png) |
+
+---
+
+### Admin Management Suite
 | Sales Analytics | Inventory Control | Product CMS |
 | :---: | :---: | :---: |
 | ![Dashboard](./Frontend/public/screenshots/admin_dashboard.png) | ![Product List](./Frontend/public/screenshots/admin_product_list.png) | ![Add Product](./Frontend/public/screenshots/admin_add_product.png) |
