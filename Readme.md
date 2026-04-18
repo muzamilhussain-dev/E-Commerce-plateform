@@ -80,31 +80,125 @@ Shinvo-Project/
 
 ## How to Run
 
-Follow these steps to set up the project locally:
+Follow these steps to set up both the Backend and Frontend locally:
 
-### 1. Clone the Repository
+### Prerequisites
+
+Make sure you have the following installed before starting:
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- A [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account (free tier works)
+- A [Cloudinary](https://cloudinary.com/) account (free tier works)
+
+---
+
+### Step 1 — Clone the Repository
+
 ```bash
-git clone https://github.com/your-username/shinvo-ecommerce.git
-cd "E-Commercce Project"
+git clone https://github.com/muzamilhussain-dev/E-Commerce-plateform.git
+cd E-Commerce-plateform
 ```
 
-### 2. Backend Setup
+---
+
+### Step 2 — Backend Setup
+
+Navigate to the `Backend` folder and install dependencies:
+
 ```bash
 cd Backend
 npm install
-# Create .env with MONGO_URI, JWT_SECRET, and CLOUDINARY credentials
+```
+
+#### Configure Environment Variables
+
+Create a `.env` file inside the `Backend` folder:
+
+```bash
+touch .env
+```
+
+Open it and add the following values:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_custom_secret_key
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+```
+
+> **Where to get these values:**
+> - `MONGO_URI` — Go to [MongoDB Atlas](https://cloud.mongodb.com), create a cluster, click "Connect", and copy the connection string. Replace `<password>` with your actual database password.
+> - `JWT_SECRET` — Any random string of your choice, e.g. `shinvo_secret_2026`
+> - `CLOUDINARY_*` — Log in to [Cloudinary Console](https://cloudinary.com/console), your Cloud Name, API Key, and API Secret are shown on the dashboard.
+
+#### (Optional) Seed the Database
+
+To populate the database with sample products and categories:
+
+```bash
+node seeder.js
+```
+
+#### Start the Backend Server
+
+```bash
 npm run dev
 ```
 
-### 3. Frontend Setup
+The API will be running at `http://localhost:5000`.
+You can verify it by opening `http://localhost:5000` in your browser — you should see:
+```json
+{ "message": "🚀 Shinvo E-Commerce API is running" }
+```
+
+---
+
+### Step 3 — Frontend Setup
+
+Open a **new terminal**, navigate to the `Frontend` folder, and install dependencies:
+
 ```bash
 cd ../Frontend
 npm install
+```
+
+#### Start the Frontend Development Server
+
+```bash
 npm run dev
 ```
+
 The application will be live at `http://localhost:5173`.
 
 ---
 
+### Running Both Servers
+
+You need **two terminals** running simultaneously:
+
+| Terminal | Directory | Command |
+| --- | --- | --- |
+| Terminal 1 | `Backend/` | `npm run dev` |
+| Terminal 2 | `Frontend/` | `npm run dev` |
+
+---
+
+### API Endpoints Reference
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| POST | `/api/auth/register` | Register a new user |
+| POST | `/api/auth/login` | Login and receive JWT |
+| GET | `/api/products` | Get all products |
+| GET | `/api/categories` | Get all categories |
+| POST | `/api/orders` | Place a new order |
+| POST | `/api/upload` | Upload product images |
+
+---
+
 Designed and Developed with a focus on UI Excellence & Full-Stack Mastery.
-# E-Commerce-plateform
